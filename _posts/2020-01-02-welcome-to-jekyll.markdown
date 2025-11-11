@@ -8,7 +8,6 @@ This section is BOJ programming review
 BOJ python 2738 
 
 Q : 2-demensional matrix sum
-A : 
 
 ``` ruby
 N, M = map(int, input().split())
