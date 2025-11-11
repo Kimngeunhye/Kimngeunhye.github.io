@@ -1,29 +1,31 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2020-01-02 19:31:29 +0900
+date:   2025-11-11 15:55:29 +0900
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+This section is BOJ programming review
+BOJ python 2738 
 
-Jekyll requires blog post files to be named according to the following format:
+Q : 2-demensional matrix sum
+A : 
 
-`YEAR-MONTH-DAY-title.MARKUP`
+N, M = map(int, input().split())
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+arr1 = [list(map(int, input().split())) for _ in range(N)]
 
-Jekyll also offers powerful support for code snippets:
+arr2 = [list(map(int, input().split())) for _ in range(N)]
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+arr3 = [[0 for _ in range(M)] for _ in range(N)]
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+for i in range(N):
+	for j in range(M):
+		arr3[i][j] = arr1[i][j] + arr2[i][j]
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+for i in arr3:
+	print(*i)
+
+
+Check out the problem : [BOJ 2738]
+
+[BOJ 2738]: https://www.acmicpc.net/problem/2738
