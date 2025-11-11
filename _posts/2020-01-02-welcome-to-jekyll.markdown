@@ -10,6 +10,7 @@ BOJ python 2738
 Q : 2-demensional matrix sum
 A : 
 
+``` ruby
 N, M = map(int, input().split())
 
 arr1 = [list(map(int, input().split())) for _ in range(N)]
@@ -24,6 +25,7 @@ for i in range(N):
 
 for i in arr3:
 	print(*i)
+```
 
 
 Check out the problem : [BOJ 2738]
